@@ -1,0 +1,46 @@
+theme = 'ayu_mirage'
+
+[editor]
+line-number = "relative"
+true-color = true
+mouse = true
+scrolloff = 7
+bufferline = 'always'
+rulers = [120]
+
+[editor.cursor-shape]
+insert = 'bar'
+normal = 'block'
+select = 'underline'
+
+[editor.file-picker]
+hidden = true
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
+
+[editor.statusline]
+left = ['mode', 'spinner']
+center = ['file-name', 'version-control']
+right = ['diagnostics', 'selections', 'position', 'file-encoding', 'file-line-ending', 'file-type']
+separator = "|"
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = false
+
+[keys.insert]
+C-space = "signature_help"
+
+[keys.normal]
+C-x = ':buffer-close'
+C-h = ':buffer-previous'
+C-l = ':buffer-next'
+C-s = ':w'
+C-f = ':fmt'
+"g" = { t = ":g 1" }
