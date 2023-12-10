@@ -36,6 +36,7 @@ auto-signature-help = false
 
 [keys.insert]
 C-space = "signature_help"
+C-s = ':w'
 
 [keys.normal]
 C-x = ':buffer-close'
