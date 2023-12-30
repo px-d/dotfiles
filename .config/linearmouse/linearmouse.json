@@ -1,46 +1,45 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
   "schemes" : [
     {
+      "if" : {
+        "device" : {
+          "productID" : "0xc547",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "productName" : "USB Receiver"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "disableAcceleration" : false,
+        "speed" : 0.3
+      },
       "scrolling" : {
+        "distance" : {
+          "vertical" : "auto"
+        },
         "acceleration" : {
           "vertical" : 1
         },
         "speed" : {
           "vertical" : 0
-        },
-        "distance" : {
-          "vertical" : "auto"
-        }
-      },
-      "pointer" : {
-        "disableAcceleration" : false,
-        "acceleration" : 0,
-        "speed" : 0.3
-      },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x46d",
-          "productName" : "USB Receiver",
-          "productID" : "0xc547",
-          "category" : "mouse"
         }
       }
     },
     {
       "if" : {
         "device" : {
-          "vendorID" : "0x5ac",
-          "productID" : "0x27c",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
           "serialNumber" : "FM79337046JHYYMA7+WNZ",
+          "vendorID" : "0x5ac",
           "category" : "trackpad",
-          "productName" : "Apple Internal Keyboard \/ Trackpad"
+          "productID" : "0x27c"
         }
       },
       "pointer" : {
         "acceleration" : 0.6875,
-        "disableAcceleration" : false,
-        "speed" : 0.0689655172413792768
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
       }
     },
     {
@@ -48,9 +47,9 @@
         "device" : {
           "vendorID" : "0x46d",
           "category" : "mouse",
+          "serialNumber" : "6064DD13136849FB",
           "productID" : "0xb025",
-          "productName" : "MX Anywhere 3",
-          "serialNumber" : "6064DD13136849FB"
+          "productName" : "MX Anywhere 3"
         }
       },
       "pointer" : {
@@ -63,11 +62,11 @@
         "speed" : {
           "vertical" : 0
         },
-        "acceleration" : {
-          "vertical" : 1
-        },
         "distance" : {
           "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
         }
       },
       "pointer" : {
@@ -78,61 +77,61 @@
       "if" : {
         "device" : {
           "vendorID" : "0x258a",
-          "productName" : "Wired Gaming Mouse",
+          "productID" : "0x36",
           "category" : "mouse",
-          "productID" : "0x36"
+          "productName" : "Wired Gaming Mouse"
         }
       }
     },
     {
       "pointer" : {
+        "acceleration" : 0.6875,
         "speed" : 0.0689655172413792768,
-        "disableAcceleration" : false,
-        "acceleration" : 0.6875
+        "disableAcceleration" : false
       },
       "if" : {
         "device" : {
-          "category" : "trackpad",
           "productName" : "Apple Internal Keyboard \/ Trackpad",
-          "vendorID" : "0x5ac",
+          "productID" : "0x340",
+          "category" : "trackpad",
           "serialNumber" : "FM711410055HYYLCH+EVT",
-          "productID" : "0x340"
+          "vendorID" : "0x5ac"
         }
       },
       "scrolling" : {
         "distance" : {
           "vertical" : "auto"
         },
-        "speed" : {
-          "vertical" : 0
-        },
         "acceleration" : {
           "vertical" : 1
+        },
+        "speed" : {
+          "vertical" : 0
         }
       }
     },
     {
       "if" : {
         "device" : {
-          "productID" : "0x134a",
-          "productName" : "HP USB Optical Mouse",
           "category" : "mouse",
-          "vendorID" : "0x3f0"
+          "productID" : "0x134a",
+          "vendorID" : "0x3f0",
+          "productName" : "HP USB Optical Mouse"
         }
       },
       "pointer" : {
-        "disableAcceleration" : true,
-        "acceleration" : 0.8
+        "acceleration" : 0.8,
+        "disableAcceleration" : true
       }
     },
     {
       "if" : {
         "device" : {
           "vendorID" : "0x4c",
+          "category" : "mouse",
           "serialNumber" : "20-91-df-51-d9-a5",
           "productID" : "0x269",
-          "productName" : "Magic Mouse",
-          "category" : "mouse"
+          "productName" : "Magic Mouse"
         }
       },
       "pointer" : {
@@ -142,14 +141,14 @@
     },
     {
       "pointer" : {
-        "disableAcceleration" : true,
-        "acceleration" : 0.5793
+        "acceleration" : 0.5793,
+        "disableAcceleration" : true
       },
       "if" : {
         "device" : {
-          "productID" : "0xdd",
-          "vendorID" : "0x56a",
           "category" : "mouse",
+          "vendorID" : "0x56a",
+          "productID" : "0xdd",
           "productName" : "CTL-470"
         }
       }
@@ -157,18 +156,19 @@
     {
       "if" : {
         "device" : {
-          "productID" : "0x269",
           "vendorID" : "0x4c",
-          "category" : "mouse",
+          "productID" : "0x269",
           "serialNumber" : "18-3f-70-dc-8e-85",
+          "category" : "mouse",
           "productName" : "Magic Mouse"
         }
       },
       "pointer" : {
-        "speed" : 0.3,
-        "disableAcceleration" : false,
-        "acceleration" : 0
+        "acceleration" : 0,
+        "speed" : 0.201,
+        "disableAcceleration" : true
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
 }
