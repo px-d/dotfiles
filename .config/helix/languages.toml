@@ -28,9 +28,27 @@ name = "html"
 scope = "text.html.basic"
 file-types = ["html"]
 language-servers = [ "tailwindcss-html", "vscode-html-language-server" ]
+formatter = { command = '/Users/pdz/.bun/bin/prettier', args = ["--parser", "html"] }
+
+[[language]]
+name = "typescript"
+formatter = { command = '/Users/pdz/.bun/bin/prettier', args = ["--parser", "typescript"] }
+
 
 [language-server.tailwindcss-html]
 language-id = "html"
 command = "tailwindcss-language-server"
 args = ["--stdio"]
 config = { }
+
+[[language]]
+name = "rust"
+rulers = [100]
+
+[[language]]
+name = "v"
+file-types = ["v", "vv"]
+
+[[language]]
+name = "verilog"
+file-types = ["vh", "sh", "svh"]

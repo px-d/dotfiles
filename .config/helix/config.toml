@@ -1,12 +1,14 @@
-theme = "ayu_mirage"
+theme = "tokyonight_storm"
 
 [editor]
 line-number = "relative"
 true-color = true
-mouse = true
-scrolloff = 7
+mouse = false
+scrolloff = 5
 bufferline = 'always'
-rulers = [120]
+idle-timeout = 0
+cursorline = true
+auto-format = true
 
 [editor.cursor-shape]
 insert = 'bar'
@@ -14,7 +16,7 @@ normal = 'block'
 select = 'underline'
 
 [editor.file-picker]
-hidden = true
+hidden = false
 
 [editor.indent-guides]
 render = true
@@ -23,16 +25,15 @@ skip-levels = 1
 
 [editor.statusline]
 left = ['mode', 'spinner']
-center = ['file-name', 'version-control']
-right = ['diagnostics', 'selections', 'position', 'file-encoding', 'file-line-ending', 'file-type']
-separator = "|"
-mode.normal = "N"
-mode.insert = "I"
-mode.select = "S"
+center = ['file-name', 'version-control', 'read-only-indicator']
+right = ['diagnostics','spacer', 'position', 'position-percentage', 'separator', 'file-encoding', 'file-line-ending', 'file-type']
+separator = " │"
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "visual"
 
 [editor.lsp]
 display-messages = true
-auto-signature-help = false
 
 [keys.insert]
 C-space = "signature_help"
@@ -40,8 +41,10 @@ C-s = ':w'
 
 [keys.normal]
 C-x = ':buffer-close'
-C-h = ':buffer-previous'
-C-l = ':buffer-next'
+H = ':buffer-previous'
+L = ':buffer-next'
 C-s = ':w'
 C-f = ':fmt'
-"g" = { t = ":g 1" }
+g = { t = ":goto 1" }
+"C-+" = "increment"
+"C-*"  = "decrement"
