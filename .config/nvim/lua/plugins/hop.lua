@@ -1,6 +1,19 @@
+-- return {
+--
+--     "phaazon/hop.nvim",
+--     config = function()
+--         require("hop").setup({})
+--    end,
+-- }
 return {
-    "phaazon/hop.nvim",
+    "ggandor/lightspeed.nvim",
     config = function()
-        require("hop").setup({})
-   end,
+        require("lightspeed").setup({
+            jump_to_unique_chars = false,
+            safe_labels = {}
+        })
+    end,
+    depedencies = {
+        "tpope/vim-repeat",
+    },
 }

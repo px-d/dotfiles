@@ -38,6 +38,18 @@ return {
 			lspconfig.cssls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.jedi_language_server.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.sqlls.setup({
+				capabilities = capabilities,
+			})
+            lspconfig.kotlin_language_server.setup({
+                capabilities  = capabilities,
+            })
+            lspconfig.gopls.setup({
+                capabilities = capabilities,
+            })
 		end,
 	},
 }

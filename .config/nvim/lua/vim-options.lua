@@ -1,11 +1,11 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
+vim.cmd("set expandtab") vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set signcolumn=yes")
+vim.cmd("set relativenumber")
 vim.cmd("set number")
-vim.cmd("autocmd InsertEnter * :set norelativenumber")
-vim.cmd("autocmd InsertLeave * :set relativenumber")
+-- vim.cmd("autocmd InsertEnter * :set norelativenumber")
+-- vim.cmd("autocmd InsertLeave * :set relativenumber")
 
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
@@ -14,6 +14,8 @@ vim.o.foldcolumn = "0"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
+vim.o.scrolloff = 8
+-- vim.opt.statuscolumn = '%{v:lnum}|%{v:relnum}  '
 
 -- navigate vim panes better
 vim.keymap.set("n", "<c-k>", ":wincmd k<cr>")
@@ -22,6 +24,11 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<cr>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<cr>")
 
 vim.keymap.set("n", "<leader>h", ":noh<cr>")
+
+-- Code Editing
+vim.keymap.set("n", "<S-C-j>", ":m +1<cr>")
+vim.keymap.set("n", "<S-C-k>", ":m -2<cr>")
+vim.keymap.set({ "n", "v" }, "mm", "%")
 
 -- Delete Line without yanking
 vim.keymap.set("n", "<leader>dl", '0v$"_d')
