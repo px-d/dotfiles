@@ -1,8 +1,3 @@
-if vim.g.vscode then
-    print("VSCODE")
-else
-    print("NVIM")
-end
 vim.g.mapleader = " "
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -19,4 +14,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-require("vim-options")
+require("options")

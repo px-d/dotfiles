@@ -10,13 +10,16 @@ return {
             require("telescope").setup({
                 pickers = {
                     find_files = {
-                        find_command = {
-                            "rg",
-                            "--files",
-                            "--glob",
-                            "!**/.git/*",
-                        },
-                        hidden = true,
+                        theme = "ivy",
+                        prompt_prefix = "🔍 ",
+                        --     find_command = {
+                        --         "rg",
+                        --         "--files",
+                        --         "--glob",
+                        --         "!**/.git/*",
+                        --     },
+                        --     hidden = true,
+
                     },
                 },
                 extensions = {
