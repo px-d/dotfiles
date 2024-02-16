@@ -1,4 +1,5 @@
-vim.cmd("set expandtab") vim.cmd("set tabstop=4")
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set signcolumn=yes")
@@ -7,8 +8,8 @@ vim.cmd("set number")
 -- vim.cmd("autocmd InsertEnter * :set norelativenumber")
 -- vim.cmd("autocmd InsertLeave * :set relativenumber")
 
-vim.g.loaded_netrwPlugin = 1
-vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1
 
 vim.o.foldcolumn = "0"
 vim.o.foldlevel = 99
@@ -48,6 +49,7 @@ vim.keymap.set("n", "<C-x>", ":bdelete<CR>", {})
 
 -- comment
 vim.keymap.set("n", "<c-c>", ":CommentToggle<CR>", {})
+vim.keymap.set("v", "<c-c>", ":'<,'>CommentToggle<CR>", {})
 
 -- hop
 vim.keymap.set("n", "<c-b>", ":HopAnywhere<CR>")

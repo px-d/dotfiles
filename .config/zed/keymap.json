@@ -13,7 +13,9 @@
       "cmd-8": ["pane::ActivateItem", 7],
       "cmd-9": ["pane::ActivateItem", 8],
       "cmd-j": "terminal_panel::ToggleFocus",
-      "ctrl-d": "editor::GoToDefinition"
+      "ctrl-d": "editor::GoToDefinition",
+      "shift-cmd-l": "workspace::ActivateNextPane",
+      "shift-cmd-h": "workspace::ActivatePreviousPane"
     }
   },
   {
