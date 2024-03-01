@@ -15,14 +15,44 @@
       "cmd-j": "terminal_panel::ToggleFocus",
       "ctrl-d": "editor::GoToDefinition",
       "shift-cmd-l": "workspace::ActivateNextPane",
-      "shift-cmd-h": "workspace::ActivatePreviousPane"
+      "shift-cmd-h": "workspace::ActivatePreviousPane",
+      "ctrl-r": "editor::FindAllReferences",
+      "shift-cmd-k": "editor::ToggleInlayHints"
     }
   },
   {
     "context": "ProjectPanel",
     "bindings": {
       "enter": "project_panel::Open",
-      "shift-enter": "project_panel::RevealInFinder"
+      "shift-enter": "project_panel::RevealInFinder",
+      "ctrl-r": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      "shift-k": "editor::Hover"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // e.g.
+      // "j j": "vim::NormalBefore" // remap jj in insert mode to escape.
     }
   }
 ]

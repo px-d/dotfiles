@@ -9,25 +9,22 @@ return {
         config = function()
             require("telescope").setup({
                 pickers = {
+                    live_grep = {
+                        theme = "ivy"
+                    },
                     find_files = {
                         theme = "ivy",
                         prompt_prefix = "🔍 ",
-                        --     find_command = {
-                        --         "rg",
-                        --         "--files",
-                        --         "--glob",
-                        --         "!**/.git/*",
-                        --     },
-                        --     hidden = true,
-
+                        hidden = true,
                     },
                 },
                 extensions = {
                     ["ui-select"] = {
-                        require("telescope.themes").get_cursor({}),
+                        require("telescope.themes").get_dropdown({}),
                     },
                 },
             })
+
             require("telescope").load_extension("ui-select")
         end,
     },

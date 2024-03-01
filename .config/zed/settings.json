@@ -7,17 +7,25 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "vim_mode": true,
-  "theme": "Dracula",
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "inlay_hints": {
-    "enabled": true
-  },
-  "ui_font_family": "GeistMono Nerd Font Propo",
-  "buffer_font_family": "GeistMono Nerd Font Propo",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  }
+    "features": {
+        "copilot": false
+    },
+    "vim_mode": true,
+    "relative_line_numbers": true,
+    "theme": "Ayu Mirage",
+    "ui_font_size": 16,
+    "buffer_font_size": 16,
+    "inlay_hints": {
+        "enabled": false
+    },
+    "ui_font_family": "GeistMono Nerd Font",
+    "buffer_font_family": "GeistMono Nerd Font",
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "format_on_save": "on"
 }

@@ -1,3 +1,4 @@
+
 vim.g.mapleader = " "
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -14,4 +15,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-require("options")
+require("vim-options")
+
+vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
